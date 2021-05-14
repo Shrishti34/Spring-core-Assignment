@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        
+        <bean id = "question1" class = "question.Question">
+        <property name = "questionId" value = "1"></property>
+        
+        <property name = "question" value = "How are you"></property>
+        
+        <property name="answerList">
+        <list>
+        <value>I am good</value>
+        <value>I am fine</value>
+        <value>I am fantastic</value>
+        </list>
+        </property>
+        
+        <property name="answer1Set">
+        <set>
+        <value>I am good</value>
+        <value>I am fine</value>
+        <value>I am fantastic</value>
+        </set>
+        </property>
+        
+        <property name="answer2Map">
+        <map>
+        <entry  key = "1" value = "I am good"/>
+        <entry  key = "2" value = "I am fine"/>
+        <entry  key = "3" value = "I am fantastic"/>
+        </map>
+        </property>
+        
+        
+        
+        </bean>
+        
+ </beans>
