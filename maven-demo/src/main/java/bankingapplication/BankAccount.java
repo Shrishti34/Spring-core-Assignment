@@ -6,6 +6,8 @@ public class BankAccount {
 	private String accountHolderName;
 	private String accountType;
 	private int accountBalance;
+	
+	
 	public int getAccountId() {
 		return accountId;
 	}

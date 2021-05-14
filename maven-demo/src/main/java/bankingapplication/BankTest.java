@@ -10,7 +10,14 @@ public class BankTest {
 
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("bankdet.xml");
-		BankAccount bank = (BankAccount) context.getBean("");
+		BankAccount bank = (BankAccount) context.getBean("bank1");
+		
+		
+		bank.getAccountId();
+		bank.getAccountHolderName();
+		bank.getAccountType();
+		bank.getAccountBalance();
+		
 	}
 
 }

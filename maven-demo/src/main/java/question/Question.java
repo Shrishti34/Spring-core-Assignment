@@ -43,6 +43,11 @@ public class Question {
 		System.out.println("Map Elements :"  + answer2Map);
 		return answer2Map;
 	}
+	@Override
+	public String toString() {
+		return "Question [questionId=" + questionId + ", question=" + question + ", answerList=" + answerList
+				+ ", answer1Set=" + answer1Set + ", answer2Map=" + answer2Map + "]";
+	}
 	public void setAnswer2Map(Map answer2Map) {
 		this.answer2Map = answer2Map;
 	}
